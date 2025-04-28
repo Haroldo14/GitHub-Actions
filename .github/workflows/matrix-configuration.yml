@@ -9,7 +9,7 @@ jobs:
     # we use matrix to combine more jobs in single one
     strategy:
       matrix:
-        on: [ubuntu-latest, ubuntu-20.04, windows-latest]
+        os: [ubuntu-latest, ubuntu-20.04, windows-latest]
         images: [hello-world, alpine]
     runs-on: ${{ matrix.os }}
     steps:
