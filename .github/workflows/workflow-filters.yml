@@ -21,3 +21,7 @@ on:
 
 jobs:
   hello:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello workflow
+      run: echo "hello workflow filter"
